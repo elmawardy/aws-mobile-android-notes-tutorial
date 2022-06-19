@@ -4,7 +4,8 @@ phases:
   build:
     commands:
       - ./gradlew assembleDebug
-      - du -h .
+      - du -h . | grep app/build/outputs/
+      - stat ./app/build/outputs/apk/app-debug.apk
 artifacts:
   files:
     - ./app/build/outputs/apk/app-debug.apk
