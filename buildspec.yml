@@ -7,4 +7,4 @@ phases:
       - du -h .
 artifacts:
   files:
-    - app/build/outputs/apk/app-debug.apk
+    - ./app/build/outputs/apk/app-debug.apk
